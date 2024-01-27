@@ -12,6 +12,7 @@ public class DialogueTimer : MonoBehaviour
     [SerializeField] private Button Happy;
     [SerializeField] private PlayableDirector AudioDir;
     [SerializeField] private float TimerCheck;
+    [SerializeField] private Image QTEIndi;
 
     public bool WinCheck;
     public bool EnableTiming = false;
@@ -33,11 +34,13 @@ public class DialogueTimer : MonoBehaviour
     public void StartButton()
     {
         AudioDir.Play();
+        StartClick.gameObject.SetActive(false);
     }
 
     public void EnableTime(int emotions)
     {
         EnableTiming = true;
+        QTEIndi.enabled = true;
         FindObjectOfType<SoundButtonManager>().SetInputTakeable(IntToEnum(emotions));
     }
 
@@ -49,6 +52,7 @@ public class DialogueTimer : MonoBehaviour
     public void FailFlag()
     {
         FailCheck = true;
+        QTEIndi.enabled = false;
     }
 
     private void Awake()
@@ -89,7 +93,6 @@ public class DialogueTimer : MonoBehaviour
         }
 
         FailCheck = false;
-
     }
 
 
