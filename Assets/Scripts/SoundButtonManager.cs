@@ -121,9 +121,15 @@ public class SoundButtonManager : MonoBehaviour
         {
             //add timestamp code here
             //add view counter here
+            isTakingInput = false;
+            answer = EnumSoundType.NONE;
+
+
+            FindObjectOfType<ViewerCount>().ChangeViewerCount(true);
             Debug.Log("wow: " + physicalButton);
         }
         
+        FindObjectOfType<ViewerCount>().ChangeViewerCount(false);
     }
 
     private EnumSoundType StringToEnum(string physicalButton)
