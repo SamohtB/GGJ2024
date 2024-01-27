@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.UI;
 
 public class DialogueTimer : MonoBehaviour
@@ -10,15 +11,17 @@ public class DialogueTimer : MonoBehaviour
     [SerializeField] private Button Sound1;
     [SerializeField] private Button Sound2;
     [SerializeField] private AudioSource WaterS1;
+    [SerializeField] private PlayableDirector AudioDirector;
  
     private bool Sound2Check;
+    [SerializeField] private bool QTECheck = false;
 
     float Timer;
     // Start is called before the first frame update
     void Start()
     {
         Sound2.onClick.AddListener(Sound1Click);
-        WaterS1.Play();
+        AudioDirector.Play();
     }
 
     private void Sound1Click()
@@ -44,22 +47,30 @@ public class DialogueTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Timer += Time.deltaTime;
+        if (QTECheck)
+        {
+            Timer += Time.deltaTime;
+            if (Sound2Check) 
+            { 
+                Debug.Log("Congratulations!");  
+            }
+            else if (Timer > 3.0f)
+            {
+                Debug.Log("You suck");
+            }
+        }
 
-        if (Timer > 1.4f & Timer < 3.0f)
-        {
-            if (Sound2Check) { Debug.Log("Congratulations!");  }
-        }
-        else if (Timer > 3.0f)
-        {
-            if (!Sound2Check) { Debug.Log("You suck"); }
-        }
     }
 
 
+    public void CallTiming()
+    {
+        QTECheck = true;
+    }
+
     private void OnGUI()
     {
-        if (Timer < 10)
+        if (Timer < WaterS1.clip.length)
         {
             GUI.Label(new Rect(100, 100, 200, 200), "Timer Count = " + Timer);
         }
