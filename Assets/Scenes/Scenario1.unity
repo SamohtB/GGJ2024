@@ -2454,17 +2454,37 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2795609939506984030, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3786283091300411631, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
       propertyPath: m_Name
       value: Dialogue System
       objectReference: {fileID: 0}
     - target: {fileID: 3786283091300411631, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4637545265556405382, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
       propertyPath: m_text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972869236979021633, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972869236979021633, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972869236979021633, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -190.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972869236979021633, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -257.3
       objectReference: {fileID: 0}
     - target: {fileID: 8674016128619132545, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2497,6 +2517,18 @@ PrefabInstance:
     - target: {fileID: 8674016128619132545, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676895301488518816, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
+      propertyPath: m_text
+      value: ' START STREAM'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676895301488518816, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
+      propertyPath: m_fontSize
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676895301488518816, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 9123860811710822747, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
       propertyPath: m_Pivot.x
@@ -2564,7 +2596,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9123860811710822747, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 212.01
       objectReference: {fileID: 0}
     - target: {fileID: 9123860811710822747, guid: f19f2f933b9ceea41a0d590b5e1b26a0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
