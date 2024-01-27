@@ -13,7 +13,7 @@ public class DialogueTimer : MonoBehaviour
     [SerializeField] private PlayableDirector AudioDir;
     [SerializeField] private float TimerCheck;
 
-    private bool Sound2Check;
+    public bool WinCheck;
     public bool EnableTiming = false;
     public bool FailCheck = false;
 
@@ -26,7 +26,7 @@ public class DialogueTimer : MonoBehaviour
 
     private void StartingClick()
     {
-        Sound2Check = true;
+        WinCheck = true;
         Debug.Log("Clicked!");
     }
 
@@ -72,15 +72,19 @@ public class DialogueTimer : MonoBehaviour
 
         if (EnableTiming)
         {
-            if (Sound2Check)
+            if (WinCheck)
             {
-                Debug.Log("Congratulations!");
+                Debug.Log("Congratulations");
+                FindObjectOfType<ViewerCount>().ChangeViewerCount(false);
                 EnableTiming = false;
+                WinCheck = false;
             }
             else if (FailCheck)
             {
                 Debug.Log("Rip");
                 EnableTiming = false;
+                FindObjectOfType<ViewerCount>().ChangeViewerCount(true);
+
             }
         }
 

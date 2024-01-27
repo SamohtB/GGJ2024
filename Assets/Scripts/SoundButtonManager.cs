@@ -124,12 +124,13 @@ public class SoundButtonManager : MonoBehaviour
             isTakingInput = false;
             answer = EnumSoundType.NONE;
 
-
-            FindObjectOfType<ViewerCount>().ChangeViewerCount(true);
+            DialogueTimer.Instance.FailCheck = false;
+            DialogueTimer.Instance.WinCheck = true;
+            //FindObjectOfType<ViewerCount>().ChangeViewerCount(false);
             Debug.Log("wow: " + physicalButton);
         }
         
-        FindObjectOfType<ViewerCount>().ChangeViewerCount(false);
+        //FindObjectOfType<ViewerCount>().ChangeViewerCount(true);
     }
 
     private EnumSoundType StringToEnum(string physicalButton)
