@@ -12,9 +12,10 @@ public class DialogueTimer : MonoBehaviour
     [SerializeField] private Button Happy;
     [SerializeField] private PlayableDirector AudioDir;
     [SerializeField] private float TimerCheck;
- 
+
     private bool Sound2Check;
     public bool EnableTiming = false;
+    public bool FailCheck = false;
 
     float Timer;
     // Start is called before the first frame update
@@ -45,6 +46,11 @@ public class DialogueTimer : MonoBehaviour
         return (EnumSoundType)num;
     }
 
+    public void FailFlag()
+    {
+        FailCheck = true;
+    }
+
     private void Awake()
     {
         // If there is an instance, and it's not me, delete myself.
@@ -62,19 +68,24 @@ public class DialogueTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Timer += Time.deltaTime;
+
         if (EnableTiming)
         {
-            Timer += Time.deltaTime;
-            if (Sound2Check) 
-            { 
-                Debug.Log("Congratulations!");  
-            }
-            else if (Timer > TimerCheck)
+            if (Sound2Check)
             {
-                Debug.Log("YOu suck");
+                Debug.Log("Congratulations!");
+                EnableTiming = false;
+            }
+            else if (FailCheck)
+            {
+                Debug.Log("Rip");
                 EnableTiming = false;
             }
         }
+
+        FailCheck = false;
+
     }
 
 

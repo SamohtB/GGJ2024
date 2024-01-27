@@ -117,7 +117,7 @@ public class SoundButtonManager : MonoBehaviour
 
     public void timestampSound(string physicalButton)
     {
-        if(!isTakingInput && StringToEnum(physicalButton) == answer)
+        if(isTakingInput && StringToEnum(physicalButton) == answer)
         {
             //add timestamp code here
             //add view counter here
