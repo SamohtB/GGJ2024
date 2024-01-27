@@ -10,24 +10,32 @@ public class DialogueTimer : MonoBehaviour
 
     [SerializeField] private Button Sound1;
     [SerializeField] private Button Sound2;
-    [SerializeField] private AudioSource WaterS1;
-    [SerializeField] private PlayableDirector AudioDirector;
+    [SerializeField] private PlayableDirector AudioDir;
  
     private bool Sound2Check;
-    [SerializeField] private bool QTECheck = false;
+    public bool EnableTiming = false;
 
     float Timer;
     // Start is called before the first frame update
     void Start()
     {
-        Sound2.onClick.AddListener(Sound1Click);
-        AudioDirector.Play();
+        Sound2.onClick.AddListener(Sound2Click);
     }
 
-    private void Sound1Click()
+    private void Sound2Click()
     {
         Sound2Check = true;
         Debug.Log("Clicked!");
+    }
+
+    public void StartButton()
+    {
+        AudioDir.Play();
+    }
+
+    public void EnableTime()
+    {
+        EnableTiming = true;
     }
 
     private void Awake()
@@ -47,7 +55,7 @@ public class DialogueTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (QTECheck)
+        if (EnableTiming)
         {
             Timer += Time.deltaTime;
             if (Sound2Check) 
@@ -56,21 +64,16 @@ public class DialogueTimer : MonoBehaviour
             }
             else if (Timer > 3.0f)
             {
-                Debug.Log("You suck");
+                Debug.Log("YOu suck");
+                EnableTiming = false;
             }
         }
-
     }
 
-
-    public void CallTiming()
-    {
-        QTECheck = true;
-    }
 
     private void OnGUI()
     {
-        if (Timer < WaterS1.clip.length)
+        if (Timer < 10)
         {
             GUI.Label(new Rect(100, 100, 200, 200), "Timer Count = " + Timer);
         }

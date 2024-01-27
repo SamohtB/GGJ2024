@@ -48,7 +48,6 @@ GameObject:
   - component: {fileID: 6326602310672083563}
   - component: {fileID: 6780925653179204804}
   - component: {fileID: 6138764274487912554}
-  - component: {fileID: 5754344713933755804}
   m_Layer: 5
   m_Name: Sound 2
   m_TagString: Untagged
@@ -170,19 +169,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5754344713933755804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2795609939506984030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7bfca4998c61cc4b9800d3e2e1700d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clicked: 0
 --- !u!1 &3485536809322159971
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press when you hear "water"
+  m_text: Press when you hear noob
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -327,6 +313,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9123860811710822747}
   - component: {fileID: 416790664902749130}
+  - component: {fileID: 9137490111863389455}
+  - component: {fileID: 620938145817631601}
   m_Layer: 5
   m_Name: Dialogue System
   m_TagString: Untagged
@@ -362,14 +350,65 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3786283091300411631}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6700c5148045ad74b98a73d556c94714, type: 3}
+  m_Script: {fileID: 11500000, guid: 987786e1c5ce94a4eab34980299971b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Sound1: {fileID: 8674016128619132545}
   Sound2: {fileID: 6138764274487912554}
   WaterS1: {fileID: 0}
+  AudioDir: {fileID: 0}
+  EnableTiming: 0
+--- !u!320 &9137490111863389455
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786283091300411631}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 852380ca047e4d243857a0dd88eb4bac, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -73994706201907270, guid: 852380ca047e4d243857a0dd88eb4bac, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
+--- !u!114 &620938145817631601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786283091300411631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 8e8c84e5e8b77ce40a67b035a26588e7, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 416790664902749130}
+          m_TargetAssemblyTypeName: DialogueTimer, Assembly-CSharp
+          m_MethodName: CallTiming
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &3863491444109489907
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,7 +555,6 @@ GameObject:
   - component: {fileID: 719845139909862097}
   - component: {fileID: 871211825554083958}
   - component: {fileID: 8674016128619132545}
-  - component: {fileID: 9199734988467748697}
   m_Layer: 5
   m_Name: Sound 1
   m_TagString: Untagged
@@ -626,7 +664,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 416790664902749130}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -638,19 +676,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &9199734988467748697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5901933540153991062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7bfca4998c61cc4b9800d3e2e1700d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clicked: 0
 --- !u!1 &5974574943813546190
 GameObject:
   m_ObjectHideFlags: 0

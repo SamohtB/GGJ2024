@@ -7,7 +7,6 @@ using System.Collections;
 public class SubtitleController : MonoBehaviour
 {
     [SerializeField] private TextAsset subtitlesTextFile;
-    [SerializeField] private string voiceLinesFolderPath;
     [SerializeField] private Subtitle[] subtitles;
     [SerializeField] private int currentSubtitleIndex;
 
@@ -18,33 +17,18 @@ public class SubtitleController : MonoBehaviour
                 index++;
                 return new Subtitle{ 
                 line = index,
-                text = voiceLine,
-                duration = GetVoiceLineDuration(index)
+                text = voiceLine
             }; }).ToArray();
     }
 
-    public float GetVoiceLineDuration(int line)
+    public void NextSubtitle()
     {
-        string path = $"{voiceLinesFolderPath}/line {line}";
-        var clip = Resources.Load<AudioClip>(path);
-
-        if(clip == null) { return 0; }
-
-        return clip.length;
-    }
-
-    private IEnumerator ShowSubtitles()
-    {
-        while(currentSubtitleIndex < subtitles.Length)
-        { 
-            GetComponent<TextMeshProUGUI>().text = subtitles[currentSubtitleIndex].text;
-            yield return new WaitForSeconds(subtitles[currentSubtitleIndex].duration);
-            currentSubtitleIndex++;
-        }
+        GetComponent<TextMeshProUGUI>().text = subtitles[currentSubtitleIndex].text;
+        currentSubtitleIndex++;
     }
 
     void Start()
     {
-        StartCoroutine(ShowSubtitles());
+        GetComponent<TextMeshProUGUI>().text = " ";
     }
 }
