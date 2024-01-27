@@ -17,6 +17,9 @@ public class SoundButtonManager : MonoBehaviour
 
     [SerializeField] private List<SoundByte> soundBytes;
     [SerializeField] private AudioSource audioSource;
+    private EnumSoundType answer = EnumSoundType.NONE;
+
+    private bool isTakingInput = false;
     
     void Start()
     {
@@ -106,10 +109,41 @@ public class SoundButtonManager : MonoBehaviour
         audioSource.Play();
     }
 
+    public void SetInputTakeable(EnumSoundType correctAnswer)
+    {
+        isTakingInput = true;
+        answer = correctAnswer;
+    }
+
     public void timestampSound(string physicalButton)
     {
-        // add timestamp code here
-        Debug.Log("wow: " + physicalButton);
+        if(!isTakingInput && StringToEnum(physicalButton) == answer)
+        {
+            //add timestamp code here
+            //add view counter here
+            Debug.Log("wow: " + physicalButton);
+        }
+        
+    }
+
+    private EnumSoundType StringToEnum(string physicalButton)
+    {
+        switch(physicalButton) 
+        {
+            case "q": return EnumSoundType.CENSOR;
+
+            case "w": case "d": return EnumSoundType.BORING;
+
+            case "e":  case "x": return EnumSoundType.FUNNY;
+
+            case "r":  case "f": return EnumSoundType.SUS;
+
+            case "a":  case "c": return EnumSoundType.HAPPY;
+
+            case "s":  case "z": return EnumSoundType.SAD;
+
+            default: return EnumSoundType.NONE;
+        }
     }
 }
   

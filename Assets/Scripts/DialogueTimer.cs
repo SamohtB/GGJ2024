@@ -34,9 +34,15 @@ public class DialogueTimer : MonoBehaviour
         AudioDir.Play();
     }
 
-    public void EnableTime(EnumSoundType Emotions)
+    public void EnableTime(int emotions)
     {
         EnableTiming = true;
+        FindObjectOfType<SoundButtonManager>().SetInputTakeable(IntToEnum(emotions));
+    }
+
+    public EnumSoundType IntToEnum(int num)
+    {
+        return (EnumSoundType)num;
     }
 
     private void Awake()
