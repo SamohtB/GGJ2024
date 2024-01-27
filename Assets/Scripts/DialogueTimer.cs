@@ -8,9 +8,10 @@ public class DialogueTimer : MonoBehaviour
 {
     public static DialogueTimer Instance { get; private set; }
 
-    [SerializeField] private Button Sound1;
-    [SerializeField] private Button Sound2;
+    [SerializeField] private Button StartClick;
+    [SerializeField] private Button Happy;
     [SerializeField] private PlayableDirector AudioDir;
+    [SerializeField] private float TimerCheck;
  
     private bool Sound2Check;
     public bool EnableTiming = false;
@@ -19,10 +20,10 @@ public class DialogueTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Sound2.onClick.AddListener(Sound2Click);
+        Happy.onClick.AddListener(StartingClick);
     }
 
-    private void Sound2Click()
+    private void StartingClick()
     {
         Sound2Check = true;
         Debug.Log("Clicked!");
@@ -33,7 +34,7 @@ public class DialogueTimer : MonoBehaviour
         AudioDir.Play();
     }
 
-    public void EnableTime()
+    public void EnableTime(EnumSoundType Emotions)
     {
         EnableTiming = true;
     }
@@ -62,7 +63,7 @@ public class DialogueTimer : MonoBehaviour
             { 
                 Debug.Log("Congratulations!");  
             }
-            else if (Timer > 3.0f)
+            else if (Timer > TimerCheck)
             {
                 Debug.Log("YOu suck");
                 EnableTiming = false;
