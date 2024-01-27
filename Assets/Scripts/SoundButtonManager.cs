@@ -137,17 +137,17 @@ public class SoundButtonManager : MonoBehaviour
     {
         switch(physicalButton) 
         {
-            case "q": return EnumSoundType.CENSOR;
+            case "q": return EnumSoundType.CENSOR; //Censor
 
-            case "w": case "d": return EnumSoundType.BORING;
+            case "w": case "d": return EnumSoundType.BORING; //Cricket and aughhh or snoring
 
-            case "e":  case "x": return EnumSoundType.FUNNY;
+            case "e":  case "x": return EnumSoundType.FUNNY; //Fart and Vine Boom
 
-            case "r":  case "f": return EnumSoundType.SUS;
+            case "r":  case "f": return EnumSoundType.SUS; //Huh and amogus
 
-            case "a":  case "c": return EnumSoundType.HAPPY;
+            case "a":  case "c": return EnumSoundType.HAPPY; //Yippie and noot
 
-            case "s":  case "z": return EnumSoundType.SAD;
+            case "s":  case "z": return EnumSoundType.SAD; //Sad trombone and violin
 
             default: return EnumSoundType.NONE;
         }
