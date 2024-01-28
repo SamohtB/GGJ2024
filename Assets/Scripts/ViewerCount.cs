@@ -38,4 +38,9 @@ public class ViewerCount : MonoBehaviour
             EventBroadcaster.Instance.PostEvent(EventNames.ON_GAME_LOSE);
         }
     }
+
+    public void WinScreenScene()
+    {
+        SceneManager.LoadScene("GameOverWin");
+    }
 }
