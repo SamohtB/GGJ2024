@@ -38,12 +38,6 @@ public class DialogueTimer : MonoBehaviour
         PauseScreen.SetActive(false);
     }
 
-    public void GameOver()
-    {
-        AudioDir.Pause();
-        SpriteDir.Pause();
-        GameOverScreen.SetActive(true);
-    }
 
     public void EnableTime(int emotions)
     {
