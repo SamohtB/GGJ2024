@@ -41,6 +41,7 @@ public class DialogueTimer : MonoBehaviour
     public void GameOver()
     {
         AudioDir.Pause();
+        SpriteDir.Pause();
         GameOverScreen.SetActive(true);
     }
 
@@ -65,6 +66,7 @@ public class DialogueTimer : MonoBehaviour
     public void DirectorPause()
     {
         AudioDir.Pause();
+        SpriteDir.Pause();
         PauseScreen.SetActive(true);
     }
 
