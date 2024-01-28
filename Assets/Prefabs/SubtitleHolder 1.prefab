@@ -1,0 +1,627 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3248149264346535376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8531689160302358825}
+  - component: {fileID: 1515572324764540763}
+  - component: {fileID: 2492042535214377017}
+  - component: {fileID: 3054659670829022425}
+  - component: {fileID: 4862023196552365088}
+  - component: {fileID: 6376060178539978833}
+  m_Layer: 5
+  m_Name: SubtitleHolder 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8531689160302358825
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3248149264346535376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1515572324764540763
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3248149264346535376}
+  m_CullTransparentMesh: 1
+--- !u!114 &2492042535214377017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3248149264346535376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: ' '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 35
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 30
+  m_fontSizeMax: 35
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!320 &3054659670829022425
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3248149264346535376}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: ace7cecd0e21bf64fa76dc1f8d081e2a, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 5946587296771979272, guid: ace7cecd0e21bf64fa76dc1f8d081e2a, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -73994706201907270, guid: 852380ca047e4d243857a0dd88eb4bac, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
+--- !u!114 &4862023196552365088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3248149264346535376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 5ed0ca84cf2ddfc4198db307826d470d, type: 2}
+    - {fileID: 11400000, guid: 8e8c84e5e8b77ce40a67b035a26588e7, type: 2}
+    - {fileID: 11400000, guid: 0ac97a69773f59440aded45808fe66ed, type: 2}
+    - {fileID: 11400000, guid: a3c8a2756b4999b49a7e5592df016c8f, type: 2}
+    - {fileID: 11400000, guid: 18a707fdb46161a4894704d58524b762, type: 2}
+    - {fileID: 11400000, guid: cf207923494e6db469c8438f4a83d831, type: 2}
+    - {fileID: 11400000, guid: fa3d79cf836fbf14ca8a0fda74436f76, type: 2}
+    - {fileID: 11400000, guid: e5b30bdb0481b1843810c565db61cd0e, type: 2}
+    - {fileID: 11400000, guid: 25dba4f3e5bf772488344c004c5952b1, type: 2}
+    - {fileID: 11400000, guid: 29814f8d4c9c0504d9936291bef3041c, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 6376060178539978833}
+          m_TargetAssemblyTypeName: SubtitleController, Assembly-CSharp
+          m_MethodName: NextSubtitle
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: SubtitleController, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueTimer, Assembly-CSharp
+          m_MethodName: EnableTime
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueTimer, Assembly-CSharp
+          m_MethodName: FailFlag
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueTimer, Assembly-CSharp
+          m_MethodName: EnableTime
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueTimer, Assembly-CSharp
+          m_MethodName: EnableTime
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueTimer, Assembly-CSharp
+          m_MethodName: EnableTime
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueTimer, Assembly-CSharp
+          m_MethodName: EnableTime
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueTimer, Assembly-CSharp
+          m_MethodName: EnableTime
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueTimer, Assembly-CSharp
+          m_MethodName: EnableTime
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: DialogueTimer, Assembly-CSharp
+          m_MethodName: EnableTime
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: -1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &6376060178539978833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3248149264346535376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e592e361718c649914030014a8a859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subtitlesTextFile: {fileID: 4900000, guid: cd44d948773835c4ebcc67af23cd4cc3, type: 3}
+  subtitles:
+  - line: 1
+    text: 'Ok mods, you know what the drill is. '
+    duration: 0
+  - line: 2
+    text: 'Normally, you guys just have to keep chat in check, '
+    duration: 0
+  - line: 3
+    text: 'but with me streaming, '
+    duration: 0
+  - line: 4
+    text: you got more to do.
+    duration: 0
+  - line: 5
+    text: Show the soundboard. *The description for each sound appears*
+    duration: 0
+  - line: 6
+    text: 'This is what you have to do for my show. '
+    duration: 0
+  - line: 7
+    text: 'The Noryk Show, OK? '
+    duration: 0
+  - line: 8
+    text: 'Our whole appeal is to make this livestream feel like a TV talk show that
+      uses sound effects '
+    duration: 0
+  - line: 9
+    text: like laugh tracks
+    duration: 0
+  - line: 10
+    text: "and sad \uFFFDAwww\uFFFD noises "
+    duration: 0
+  - line: 11
+    text: "recycled from dead people\uFFFDs audio in the 60\uFFFDs. "
+    duration: 0
+  - line: 12
+    text: 'But with a twist. '
+    duration: 0
+  - line: 13
+    text: "We\uFFFDre using a soundboard full of memes. "
+    duration: 0
+  - line: 14
+    text: 'My job is to be funny. '
+    duration: 0
+  - line: 15
+    text: 'Your job is to make me funnier using the right sound to press at the right
+      time. '
+    duration: 0
+  - line: 16
+    text: "Press the wrong sound or miss the timing, and you\uFFFDll make the view
+      count smaller. "
+    duration: 0
+  - line: 17
+    text: "If it reaches zero, you\uFFFDre the one who\uFFFDs done for, you hear
+      me? "
+    duration: 0
+  - line: 18
+    text: 'I need people to keep watching my show, '
+    duration: 0
+  - line: 19
+    text: "and someone\uFFFDs gotta do something right on this stream because I can\uFFFDt
+      fuck up here. "
+    duration: 0
+  - line: 20
+    text: 'Everyone likes me, so if anything goes wrong, '
+    duration: 0
+  - line: 21
+    text: it's on you.
+    duration: 0
+  - line: 22
+    text: Alright.
+    duration: 0
+  - line: 23
+    text: "Let\uFFFDs not keep my people waiting. "
+    duration: 0
+  - line: 24
+    text: "I\uFFFDm sure they\uFFFDre already missing me."
+    duration: 0
+  - line: 25
+    text: "Oh, and don\uFFFDt forget. "
+    duration: 0
+  - line: 26
+    text: 'We got a guest coming over, '
+    duration: 0
+  - line: 27
+    text: "he\uFFFDs in call with me right now."
+    duration: 0
+  - line: 28
+    text: '*Livestream Starts/First Topic: Casual Talk. greetings then random topic
+      (weird dreams)*'
+    duration: 0
+  - line: 29
+    text: 'Hey everyone! '
+    duration: 0
+  - line: 30
+    text: "How y\uFFFDall doing? "
+    duration: 0
+  - line: 31
+    text: 'Good? Good? Good. '
+    duration: 0
+  - line: 32
+    text: "\uFFFDcause I\uFFFDm doing great. "
+    duration: 0
+  - line: 33
+    text: 'I just got back from my summer cruise aaaand '
+    duration: 0
+  - line: 34
+    text: 'happened to meet someone there. '
+    duration: 0
+  - line: 35
+    text: 'While I was chilling down in the hot tub, '
+    duration: 0
+  - line: 36
+    text: 'someone decided to take a dip next to me. '
+    duration: 0
+  - line: 37
+    text: 'Who knew a professional was in the same cruise as me, '
+    duration: 0
+  - line: 38
+    text: "and now he\uFFFDs appearing here as a guest? "
+    duration: 0
+  - line: 39
+    text: "Give it up for the one and only GOAT\uFFFD Eeyore!"
+    duration: 0
+  - line: 40
+    text: Heyyyyyy ^_^
+    duration: 0
+  - line: 41
+    text: Anyone who watches my channel would know a streamer like Eeyore.
+    duration: 0
+  - line: 42
+    text: "Oh please\uFFFD "
+    duration: 0
+  - line: 43
+    text: 'a few million views is not that big, '
+    duration: 0
+  - line: 44
+    text: I still have lots to go if I ever wanna churn out as much content as you
+      do, Noryk.
+    duration: 0
+  - line: 45
+    text: "Not that big\uFFFD "
+    duration: 0
+  - line: 46
+    text: 'no, no, man, your channel is just a few months old, '
+    duration: 0
+  - line: 47
+    text: "and you\uFFFDre already have a large following."
+    duration: 0
+  - line: 48
+    text: 'Exactly. '
+    duration: 0
+  - line: 49
+    text: If I didn't, how could I even afford to go on that cruise the same as you
+      did?
+    duration: 0
+  - line: 50
+    text: Now that I think about it,
+    duration: 0
+  - line: 51
+    text: "didn\uFFFDt I see your parents there too? "
+    duration: 0
+  - line: 52
+    text: 'My bad about how I met them though, '
+    duration: 0
+  - line: 53
+    text: "I didn\uFFFDt realize who I was flirting with until your mom said\uFFFD"
+    duration: 0
+  - line: 54
+    text: "NAH NAH dude I\uFFFD "
+    duration: 0
+  - line: 55
+    text: "ahem (clears throat)\uFFFD "
+    duration: 0
+  - line: 56
+    text: 'I get it, '
+    duration: 0
+  - line: 57
+    text: "you\uFFFDre hard at work, "
+    duration: 0
+  - line: 58
+    text: "you\uFFFDre on that grind, "
+    duration: 0
+  - line: 59
+    text: 'I respect that. '
+    duration: 0
+  - line: 60
+    text: 'Money, '
+    duration: 0
+  - line: 61
+    text: 'bitches, '
+    duration: 0
+  - line: 62
+    text: 'the fame, '
+    duration: 0
+  - line: 63
+    text: yeah yeah
+    duration: 0
+  - line: 64
+    text: 'Exactlyyy, '
+    duration: 0
+  - line: 65
+    text: 'speaking of that cruise, '
+    duration: 0
+  - line: 66
+    text: I actually had a weird dream after I met you.
+    duration: 0
+  - line: 67
+    text: For real?
+    duration: 0
+  - line: 68
+    text: "Yeah, yeah, here\uFFFDs the thing. "
+    duration: 0
+  - line: 69
+    text: 'I rarely ever get dreams '
+    duration: 0
+  - line: 70
+    text: "so that\uFFFDs why I still remember this one up until now. "
+    duration: 0
+  - line: 71
+    text: 'In the dream, '
+    duration: 0
+  - line: 72
+    text: 'I was actually in bed, '
+    duration: 0
+  - line: 73
+    text: 'but I couldn''t get up. '
+    duration: 0
+  - line: 74
+    text: You were there sitting on the bedside with your back turned to me,
+    duration: 0
+  - line: 75
+    text: "but I was trying to catch your attention like \uFFFDNoryk\uFFFD! Noryyyyk!\uFFFD "
+    duration: 0
+  - line: 76
+    text: "but you just weren\uFFFDt looking! So I kept calling you."
+    duration: 0
+  - line: 77
+    text: "\uFFFDNoryyyk! Noooryyyk!\uFFFD "
+    duration: 0
+  - line: 78
+    text: 'Until you finally looked! '
+    duration: 0
+  - line: 79
+    text: "And then\uFFFD"
+    duration: 0
+  - line: 80
+    text: Then what?
+    duration: 0
+  - line: 81
+    text: 3 second silence.
+    duration: 0
+  - line: 82
+    text: Eeyore is visibly grinning.
+    duration: 0
+  - line: 83
+    text: What, bro???
+    duration: 0
+  - line: 84
+    text: We started wrestling.
+    duration: 0
+  - line: 85
+    text: Huh
+    duration: 0
+  - line: 86
+    text: "I\uFFFDm serious, bro. I was on top and then you were\uFFFD"
+    duration: 0
+  - line: 87
+    text: Actually,
+    duration: 0
+  - line: 88
+    text: "I think that\uFFFDs where you\uFFFDre wrong. "
+    duration: 0
+  - line: 89
+    text: 'I think I would be the one who is on top. '
+    duration: 0
+  currentSubtitleIndex: 0

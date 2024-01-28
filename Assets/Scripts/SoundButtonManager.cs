@@ -17,6 +17,9 @@ public class SoundButtonManager : MonoBehaviour
 
     [SerializeField] private List<SoundByte> soundBytes;
     [SerializeField] private AudioSource audioSource;
+    private EnumSoundType answer = EnumSoundType.NONE;
+
+    private bool isTakingInput = false;
     
     void Start()
     {
@@ -106,10 +109,48 @@ public class SoundButtonManager : MonoBehaviour
         audioSource.Play();
     }
 
+    public void SetInputTakeable(EnumSoundType correctAnswer)
+    {
+        isTakingInput = true;
+        answer = correctAnswer;
+    }
+
     public void timestampSound(string physicalButton)
     {
-        // add timestamp code here
-        Debug.Log("wow: " + physicalButton);
+        if(isTakingInput && StringToEnum(physicalButton) == answer)
+        {
+            //add timestamp code here
+            //add view counter here
+            isTakingInput = false;
+            answer = EnumSoundType.NONE;
+
+            DialogueTimer.Instance.FailCheck = false;
+            DialogueTimer.Instance.WinCheck = true;
+            //FindObjectOfType<ViewerCount>().ChangeViewerCount(false);
+            Debug.Log("wow: " + physicalButton);
+        }
+        
+        //FindObjectOfType<ViewerCount>().ChangeViewerCount(true);
+    }
+
+    private EnumSoundType StringToEnum(string physicalButton)
+    {
+        switch(physicalButton) 
+        {
+            case "q": return EnumSoundType.CENSOR; //Censor
+
+            case "w": case "d": return EnumSoundType.BORING; //Cricket and aughhh or snoring
+
+            case "e":  case "x": return EnumSoundType.FUNNY; //Fart and Vine Boom
+
+            case "r":  case "f": return EnumSoundType.SUS; //Huh and amogus
+
+            case "a":  case "c": return EnumSoundType.HAPPY; //Yippie and noot
+
+            case "s":  case "z": return EnumSoundType.SAD; //Sad trombone and violin
+
+            default: return EnumSoundType.NONE;
+        }
     }
 }
   
