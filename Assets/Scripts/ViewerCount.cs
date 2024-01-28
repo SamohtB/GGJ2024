@@ -33,6 +33,7 @@ public class ViewerCount : MonoBehaviour
         if(currentViewerCount <= 0)
         {
             //Lose Condition
+            DialogueTimer.Instance.GameOver();
             EventBroadcaster.Instance.PostEvent(EventNames.ON_GAME_LOSE);
         }
     }
