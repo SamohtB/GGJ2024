@@ -9,6 +9,13 @@ public class SubtitleController : MonoBehaviour
     [SerializeField] private TextAsset subtitlesTextFile;
     [SerializeField] private Subtitle[] subtitles;
     [SerializeField] private int currentSubtitleIndex;
+    [SerializeField] private TextMeshProUGUI text;
+
+    private void Awake()
+    {
+        text.outlineWidth = .25f;
+        text.outlineColor = new Color32(0, 0, 0, 255);
+    }
 
     private void OnValidate()
     {
