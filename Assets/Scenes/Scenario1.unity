@@ -123,90 +123,91 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &91409559
+--- !u!1 &91409559 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3153248684396943409, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+  m_PrefabInstance: {fileID: 5746590552320459069}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 91409560}
-  - component: {fileID: 91409561}
-  m_Layer: 0
-  m_Name: Stream
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &91409560
+--- !u!4 &91409560 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+  m_PrefabInstance: {fileID: 5746590552320459069}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &91409562 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8895172223009042799, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+  m_PrefabInstance: {fileID: 5746590552320459069}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91409559}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.9, z: -1.34}
-  m_LocalScale: {x: 1.05, y: 1.05, z: 1.05}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1898314264}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &91409561
-SpriteRenderer:
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb54a0e1405f1bf47bc7997d120be1a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &91409563
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 91409559}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0d5962fc8a0d4f940beed9d0fb663edd, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 6625bbffe1fd1e84d969e98f7889c6a2, type: 2}
+    - {fileID: 11400000, guid: fcf99abb71bce044db089ca23ec5e913, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 91409562}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 91409562}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!320 &91409564
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91409559}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 0bb43f874dbe6db41bec6dcc10f0e1d9, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 5946587296771979272, guid: 0bb43f874dbe6db41bec6dcc10f0e1d9, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &141892773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4600,11 +4601,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.size
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Signals.Array.size
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Signals.Array.data[1]
@@ -4643,6 +4644,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 29814f8d4c9c0504d9936291bef3041c, type: 2}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Signals.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6625bbffe1fd1e84d969e98f7889c6a2, type: 2}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Signals.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: fcf99abb71bce044db089ca23ec5e913, type: 2}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -4680,6 +4689,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
@@ -4727,6 +4744,14 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1432801650}
@@ -4770,6 +4795,14 @@ PrefabInstance:
       propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1432801649}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 91409562}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 91409562}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -4815,6 +4848,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnableTime
       objectReference: {fileID: 0}
@@ -4849,6 +4890,14 @@ PrefabInstance:
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnableTime
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwapSprite
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwapSprite
       objectReference: {fileID: 0}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.data[0].m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -4895,6 +4944,14 @@ PrefabInstance:
       value: DialogueTimer, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SpriteSwaper, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SpriteSwaper, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 2
       objectReference: {fileID: 0}
@@ -4917,6 +4974,10 @@ PrefabInstance:
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_Events.m_Events.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4954,981 +5015,13 @@ PrefabInstance:
       propertyPath: m_Events.m_Events.Array.data[9].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.size
-      value: 166
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[0].text
-      value: Ok mods!
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[1].text
-      value: 'you know what the drill is '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[2].text
-      value: 'normally you guys just have to keep chat in check '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[3].text
-      value: but with me streaming
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[4].text
-      value: you got more to do
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[5].text
-      value: 'this is what you have to do for my show '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[6].text
-      value: The Noryk Show!
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[7].text
-      value: 'OK? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[8].text
-      value: 'our whole appeal is to make this livestream '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[9].text
-      value: 'feel like a TV talk show '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[10].text
-      value: that uses sound effects
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[11].text
-      value: like laugh tracks
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[12].text
-      value: 'and sad AWWW noises '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[13].text
-      value: 'recycled from dead peoples audio in the 60s '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[14].text
-      value: but with a twist
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[15].text
-      value: 'we re using a soundboard full of memes '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[16].text
-      value: my job is to be funny
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[17].text
-      value: 'your job is to make me funnier '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[18].text
-      value: 'using the right sound '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[19].text
-      value: 'to press at the right time '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[20].text
-      value: 'press the wrong sound '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[21].text
-      value: or miss the timing
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[22].text
-      value: 'and you ll make the view count smaller '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[23].text
-      value: if it reaches zero
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[24].text
-      value: you re the one who s done for
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[25].text
-      value: 'you hear me? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[26].text
-      value: 'I need people to keep watching MY show '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[27].text
-      value: 'and someones gotta do something right on this stream '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[28].text
-      value: because I cant f*** up here
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[29].text
-      value: everyone likes me
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[30].text
-      value: so if anything goes wrong
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[31].text
-      value: its on you
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[32].text
-      value: '        '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[33].text
-      value: alright!
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[34].text
-      value: 'lets not keep my people waiting '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[35].text
-      value: I m sure they re already missing me
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[36].text
-      value: OH
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[37].text
-      value: 'and don t forget '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[38].text
-      value: we got a guest coming over
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[39].text
-      value: he s in call with me right now
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[40].text
-      value: '   '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[41].text
-      value: 'HEYYY everyone! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[42].text
-      value: 'How y all doing? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[43].text
-      value: Good?
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[44].text
-      value: 'Good? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[45].text
-      value: 'Good '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[46].text
-      value: 'cause I m doing great '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[47].text
-      value: 'I just got back from my summer cruise aaaand '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[48].text
-      value: happened to meet someone there
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[49].text
-      value: while I was chilling down in the hot tub
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[50].text
-      value: 'someone decided to take a dip next to me '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[51].text
-      value: who knew a professional was in the same cruise as me
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[52].text
-      value: 'and now he s appearing here as a guest? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[53].text
-      value: 'give it up for the one and only '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[54].text
-      value: 'GOAT  '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[55].text
-      value: Eeyore!
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[56].text
-      value: Heyyyyyy ^_^
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[57].text
-      value: anyone who watches my channel
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[58].text
-      value: would know a streamer like Eeyore
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[59].text
-      value: 'Oh please  '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[60].text
-      value: 'a few million views is not that big '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[61].text
-      value: 'I still have lots to go '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[62].text
-      value: 'if I ever wanna '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[63].text
-      value: churn out as much content as you do, Noryk
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[64].text
-      value: '    '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[65].text
-      value: 'not that big  '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[66].text
-      value: 'no, no, man '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[67].text
-      value: your channel is just a few months old
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[68].text
-      value: and you re already have a large following
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[69].text
-      value: Exactly
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[70].text
-      value: If I didn't
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[71].text
-      value: 'how could I even afford to go '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[72].text
-      value: on that cruise the same as you did?
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[73].text
-      value: now that I think about it
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[74].text
-      value: 'didn t I see your parents there too? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[75].text
-      value: 'my bad about how I met them though '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[76].text
-      value: 'I didn t realize who I was flirting with '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[77].text
-      value: 'until your mom said '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[78].text
-      value: 'NAH NAH dude I  '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[79].text
-      value: '(clears throat) '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[80].text
-      value: I get it
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[81].text
-      value: you re hard at work
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[82].text
-      value: you re on that grind
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[83].text
-      value: I respect that
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[84].text
-      value: money
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[85].text
-      value: b*****s
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[86].text
-      value: the fame
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[87].text
-      value: yeah yeah
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[88].text
-      value: exactlyyy
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[89].line
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[89].text
-      value: '    '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[90].line
-      value: 91
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[90].text
-      value: speaking of that cruise
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[91].line
-      value: 92
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[91].text
-      value: I actually had a weird dream after I met you
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[92].line
-      value: 93
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[92].text
-      value: For real?
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[93].line
-      value: 94
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[93].text
-      value: 'yeah yeah '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[94].line
-      value: 95
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[94].text
-      value: here s the thing
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[95].line
-      value: 96
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[95].text
-      value: 'I rarely ever get dreams '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[96].line
-      value: 97
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[96].text
-      value: so that s why I still remember this one up until now-
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[97].line
-      value: 98
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[97].text
-      value: In the dream
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[98].line
-      value: 99
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[98].text
-      value: I was actually in bed
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[99].line
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[99].text
-      value: but I couldn't get up
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[100].line
-      value: 101
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[100].text
-      value: 'You were there sitting on the bedside '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[101].line
-      value: 102
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[101].text
-      value: with your back turned to me
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[102].line
-      value: 103
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[102].text
-      value: 'but I was trying to catch your attention '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[103].line
-      value: 104
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[103].text
-      value: 'like Noryk ! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[104].line
-      value: 105
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[104].text
-      value: 'Noryyyyk! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[105].line
-      value: 106
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[105].text
-      value: 'but you just weren t looking! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[106].line
-      value: 107
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[106].text
-      value: so I kept calling you
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[107].line
-      value: 108
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[107].text
-      value: 'Noryyyk! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[108].line
-      value: 109
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[108].text
-      value: 'Noooryyyk! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[109].line
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[109].text
-      value: 'until you finally looked! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[110].line
-      value: 111
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[110].text
-      value: 'and then '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[111].line
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[111].text
-      value: '      '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[112].line
-      value: 113
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[112].text
-      value: then what?
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[113].line
-      value: 114
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[113].text
-      value: '      '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[114].line
-      value: 115
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[114].text
-      value: what bro???
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[115].line
-      value: 116
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[115].text
-      value: We started wrestling
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[116].line
-      value: 117
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[116].text
-      value: HUH
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[117].line
-      value: 118
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[117].text
-      value: I m serious bro
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[118].line
-      value: 119
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[118].text
-      value: 'I was on top '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[119].line
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[119].text
-      value: 'and then you were '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[120].line
-      value: 121
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[120].text
-      value: actually
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[121].line
-      value: 122
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[121].text
-      value: 'I think that s where you re wrong '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[122].line
-      value: 123
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[122].text
-      value: I think I would be the one who is on top
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[123].line
-      value: 124
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[123].text
-      value: I mean not that I m complaining
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[124].line
-      value: 125
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[124].text
-      value: but I m just saying
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[125].line
-      value: 126
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[125].text
-      value: it s this dream I had
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[126].line
-      value: 127
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[126].text
-      value: 'and I m not done '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[127].line
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[127].text
-      value: listen here Eeyore
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[128].line
-      value: 129
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[128].text
-      value: 'I can t let you take the reins on this show '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[129].line
-      value: 130
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[129].text
-      value: 'just when it started '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[130].line
-      value: 131
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[130].text
-      value: 'and this is my show '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[131].line
-      value: 132
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[131].text
-      value: we re talking about here
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[132].line
-      value: 133
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[132].text
-      value: 'I m the one who should be '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[133].line
-      value: 134
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[133].text
-      value: taking the lead here
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[134].line
-      value: 135
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[134].text
-      value: '   '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[135].line
-      value: 136
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[135].text
-      value: 'I think it s time to move on '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[136].line
-      value: 137
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[136].text
-      value: 'from telling stories about '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[137].line
-      value: 138
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[137].text
-      value: 'You re just jealous man '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[138].line
-      value: 139
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[138].text
-      value: What?!
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[139].line
-      value: 140
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[139].text
-      value: 'Yeah '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[140].line
-      value: 141
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[140].text
-      value: I said it
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[141].line
-      value: 142
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[141].text
-      value: That s the only reason you even invited me
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[142].line
-      value: 143
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[142].text
-      value: to your lame-ass show
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[143].line
-      value: 144
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[143].text
-      value: 'It s cause my popularity '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[144].line
-      value: 145
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[144].text
-      value: 'is rising faster than yours '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[145].line
-      value: 146
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[145].text
-      value: 'and I m earning more in a week '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[146].line
-      value: 147
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[146].text
-      value: than you ever could in a month
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[147].line
-      value: 148
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[147].text
-      value: I ain t some stupid sadboi for you to exploit!
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[148].line
-      value: 149
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[148].text
-      value: '     '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[149].line
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[149].text
-      value: 'even though that s exactly '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[150].line
-      value: 151
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[150].text
-      value: 'why the algorithm loves me '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[151].line
-      value: 152
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[151].text
-      value: '      '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[152].line
-      value: 153
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[152].text
-      value: 'You  '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[153].line
-      value: 154
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[153].text
-      value: 'You! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[154].line
-      value: 155
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[154].text
-      value: 'You don t know a damn thing about me Eeyore! '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[155].line
-      value: 156
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[155].text
-      value: You re-
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[156].line
-      value: 157
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[156].text
-      value: '     '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[157].line
-      value: 158
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[157].text
-      value: back me up here mods
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[158].line
-      value: 159
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[158].text
-      value: you re just a noob in the livestreaming community!
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[159].line
-      value: 160
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[159].text
-      value: You barely started out
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[160].line
-      value: 161
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[160].text
-      value: 'and you re already making enemies '
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[161].line
-      value: 162
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[161].text
-      value: with the wrong people
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[162].line
-      value: 163
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[162].text
-      value: Whatever man
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[163].line
-      value: 164
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[163].text
-      value: you just can t take a bottom joke
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[164].line
-      value: 165
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[164].text
-      value: MODS! Don t encourage him!
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[165].line
-      value: 166
-      objectReference: {fileID: 0}
-    - target: {fileID: 399557173940886345, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
-      propertyPath: subtitles.Array.data[165].text
-      value: '          '
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 138527864618148479, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+      propertyPath: m_Events.m_Events.Array.data[11].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1377713911523341847, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
       propertyPath: m_InitialState
@@ -6074,6 +5167,73 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1328136516}
   m_SourcePrefab: {fileID: 100100000, guid: 3574251c268bc104d8238b353443d0d8, type: 3}
+--- !u!1001 &5746590552320459069
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1898314264}
+    m_Modifications:
+    - target: {fileID: 3153248684396943409, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_Name
+      value: Stream
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723584710271460517, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8895172223009042799, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      propertyPath: sprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c9da0513e6181f4cbda4adde2fa9c51, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3153248684396943409, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 91409564}
+    - targetCorrespondingSourceObject: {fileID: 3153248684396943409, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 91409563}
+  m_SourcePrefab: {fileID: 100100000, guid: f259a00167ca0944e905de76248eb4f3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

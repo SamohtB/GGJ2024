@@ -9,6 +9,7 @@ public class DialogueTimer : MonoBehaviour
     public static DialogueTimer Instance { get; private set; }
 
     [SerializeField] private PlayableDirector AudioDir;
+    [SerializeField] private PlayableDirector SpriteDir;
     [SerializeField] private float TimerCheck;
     [SerializeField] private Image QTEIndi;
     [SerializeField] private GameObject PauseScreen;
@@ -33,6 +34,7 @@ public class DialogueTimer : MonoBehaviour
     public void StartButton()
     {
         AudioDir.Play();
+        SpriteDir.Play();
         PauseScreen.SetActive(false);
     }
 
