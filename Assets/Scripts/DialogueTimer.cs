@@ -8,11 +8,10 @@ public class DialogueTimer : MonoBehaviour
 {
     public static DialogueTimer Instance { get; private set; }
 
-    [SerializeField] private Button StartClick;
-    [SerializeField] private Button Happy;
     [SerializeField] private PlayableDirector AudioDir;
     [SerializeField] private float TimerCheck;
     [SerializeField] private Image QTEIndi;
+    [SerializeField] private GameObject PauseScreen;
 
     public bool WinCheck;
     public bool EnableTiming = false;
@@ -22,7 +21,6 @@ public class DialogueTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Happy.onClick.AddListener(StartingClick);
     }
 
     private void StartingClick()
@@ -34,7 +32,7 @@ public class DialogueTimer : MonoBehaviour
     public void StartButton()
     {
         AudioDir.Play();
-        StartClick.gameObject.SetActive(false);
+        PauseScreen.SetActive(false);
     }
 
     public void EnableTime(int emotions)
@@ -53,6 +51,12 @@ public class DialogueTimer : MonoBehaviour
     {
         FailCheck = true;
         QTEIndi.enabled = false;
+    }
+
+    public void DirectorPause()
+    {
+        AudioDir.Pause();
+        PauseScreen.SetActive(true);
     }
 
     private void Awake()
@@ -96,15 +100,15 @@ public class DialogueTimer : MonoBehaviour
     }
 
 
-    private void OnGUI()
-    {
-        if (Timer < 10)
-        {
-            GUI.Label(new Rect(100, 100, 200, 200), "Timer Count = " + Timer);
-        }
-        else
-        {
-            GUI.Label(new Rect(100, 100, 200, 200), "See ya");
-        }
-    }
+    //private void OnGUI()
+    //{
+    //    if (Timer < 10)
+    //    {
+    //        GUI.Label(new Rect(100, 100, 200, 200), "Timer Count = " + Timer);
+    //    }
+    //    else
+    //    {
+    //        GUI.Label(new Rect(100, 100, 200, 200), "See ya");
+    //    }
+    //}
 }
