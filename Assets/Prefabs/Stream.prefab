@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8723584710271460517}
   - component: {fileID: 3497123121988002755}
   - component: {fileID: 8895172223009042799}
+  - component: {fileID: 7287374566280882338}
+  - component: {fileID: 7095315963024247686}
   m_Layer: 0
   m_Name: Stream
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3153248684396943409}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.9, z: -1.34}
   m_LocalScale: {x: 1.05, y: 1.05, z: 1.05}
   m_ConstrainProportionsScale: 1
@@ -100,4 +102,68 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   sprites:
   - {fileID: 21300000, guid: 0d5962fc8a0d4f940beed9d0fb663edd, type: 3}
-  - {fileID: 21300000, guid: 7c878f765e4aa294aaeebb5e7a0e4de5, type: 3}
+  - {fileID: 21300000, guid: 3c9da0513e6181f4cbda4adde2fa9c51, type: 3}
+--- !u!320 &7287374566280882338
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3153248684396943409}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 0bb43f874dbe6db41bec6dcc10f0e1d9, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 5946587296771979272, guid: 0bb43f874dbe6db41bec6dcc10f0e1d9, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
+--- !u!114 &7095315963024247686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3153248684396943409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 6625bbffe1fd1e84d969e98f7889c6a2, type: 2}
+    - {fileID: 11400000, guid: fcf99abb71bce044db089ca23ec5e913, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8895172223009042799}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8895172223009042799}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
