@@ -13,6 +13,7 @@ public class DialogueTimer : MonoBehaviour
     [SerializeField] private float TimerCheck;
     [SerializeField] private Image QTEIndi;
     [SerializeField] private GameObject PauseScreen;
+    [SerializeField] private GameObject GameOverScreen;
 
     public bool WinCheck;
     public bool EnableTiming = false;
@@ -35,6 +36,12 @@ public class DialogueTimer : MonoBehaviour
         AudioDir.Play();
         SpriteDir.Play();
         PauseScreen.SetActive(false);
+    }
+
+    public void GameOver()
+    {
+        AudioDir.Pause();
+        GameOverScreen.SetActive(true);
     }
 
     public void EnableTime(int emotions)
