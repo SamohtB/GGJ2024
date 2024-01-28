@@ -103,6 +103,14 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 0d5962fc8a0d4f940beed9d0fb663edd, type: 3}
   - {fileID: 21300000, guid: 3c9da0513e6181f4cbda4adde2fa9c51, type: 3}
+  - {fileID: 21300000, guid: c554bed400c6d6b41abcc14124221e09, type: 3}
+  - {fileID: 21300000, guid: 9ba058ed281b50d4498949eb4c125f84, type: 3}
+  - {fileID: 21300000, guid: 23c5e3080f47dce4ca5ca401423a71ad, type: 3}
+  - {fileID: 21300000, guid: 8735817b0ebf10a44b5a555ed0bd0cc2, type: 3}
+  - {fileID: 21300000, guid: 2107bcd94fa94a649ba4419e40778674, type: 3}
+  - {fileID: 21300000, guid: 366829916237c7f48893a08d6b265690, type: 3}
+  - {fileID: 21300000, guid: a5c442446d298744cbc6e2cb42e31ec8, type: 3}
+  - {fileID: 21300000, guid: 8bdb462c5b4095b479c36fed84b03b26, type: 3}
 --- !u!320 &7287374566280882338
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -138,6 +146,14 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: 6625bbffe1fd1e84d969e98f7889c6a2, type: 2}
     - {fileID: 11400000, guid: fcf99abb71bce044db089ca23ec5e913, type: 2}
+    - {fileID: 11400000, guid: c95294f9c71c8f640ad53315f731cb06, type: 2}
+    - {fileID: 11400000, guid: 0b8084b9a889c0e408205bf12d16ffa9, type: 2}
+    - {fileID: 11400000, guid: d7511690ccf7a2b42a001046ad5b9666, type: 2}
+    - {fileID: 11400000, guid: 2bef1a77dbb5319469a22f6e325e5c08, type: 2}
+    - {fileID: 11400000, guid: 4b8dbfb40496f054ebd7a6e981ed302a, type: 2}
+    - {fileID: 11400000, guid: cd609c8c4549fdc4d9c1a4bff7fe0f1f, type: 2}
+    - {fileID: 11400000, guid: e8a692f495731ab4aa6f5c8d54e6e8e5, type: 2}
+    - {fileID: 11400000, guid: 87fe190043fe4324683a7cf68ac41638, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -163,6 +179,118 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8895172223009042799}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8895172223009042799}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 3
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8895172223009042799}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 4
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8895172223009042799}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 5
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8895172223009042799}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 6
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8895172223009042799}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 7
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8895172223009042799}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 8895172223009042799}
+          m_TargetAssemblyTypeName: SpriteSwaper, Assembly-CSharp
+          m_MethodName: SwapSprite
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 9
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
