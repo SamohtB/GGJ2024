@@ -11,6 +11,7 @@ public class DialogueTimer : MonoBehaviour
     [SerializeField] private Button StartClick;
     [SerializeField] private Button Happy;
     [SerializeField] private PlayableDirector AudioDir;
+    [SerializeField] private PlayableDirector SpriteDir;
     [SerializeField] private float TimerCheck;
     [SerializeField] private Image QTEIndi;
 
@@ -34,6 +35,7 @@ public class DialogueTimer : MonoBehaviour
     public void StartButton()
     {
         AudioDir.Play();
+        SpriteDir.Play();
         StartClick.gameObject.SetActive(false);
     }
 
