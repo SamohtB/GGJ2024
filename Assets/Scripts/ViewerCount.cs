@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ViewerCount : MonoBehaviour
 {
@@ -33,8 +34,13 @@ public class ViewerCount : MonoBehaviour
         if(currentViewerCount <= 0)
         {
             //Lose Condition
-            DialogueTimer.Instance.GameOver();
+            SceneManager.LoadScene("GameOverLose");
             EventBroadcaster.Instance.PostEvent(EventNames.ON_GAME_LOSE);
         }
+    }
+
+    public void WinScreenScene()
+    {
+        SceneManager.LoadScene("GameOverWin");
     }
 }
